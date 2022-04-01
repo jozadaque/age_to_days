@@ -2,7 +2,7 @@ import 'package:age_to_days/src/models/converter.dart';
 import 'package:flutter/widgets.dart';
 
 class ConverterStore extends ChangeNotifier {
-  late int result;
+  int result = 0;
 
   converterAgeToDays(Converter age) {
     final days = age.age * 365;
